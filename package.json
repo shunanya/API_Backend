@@ -1,0 +1,66 @@
+{
+  "name": "API_Backend",
+  "version": "1.0.9",
+  "description": "API Backend Server for Node.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shunanya/API_Backend.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "log-tracking": "^1.2.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "chai": "^4.2.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "mocha": "^6.2.3",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,tsx}": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ],
+    "*.{js}": [
+      "./node_modules/.bin/prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "Node.js",
+    "REST",
+    "API",
+    "backend",
+    "Security"
+  ],
+  "author": {
+    "name": "Simon Hunanyan",
+    "email": "simon.hunanyan@monitis.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "directories": {
+    "External modules": "./node_modules",
+    "Sorces folder": "./src"
+  },
+  "scripts": {
+    "test": "mocha",
+    "testCoverage": "nyc --reporter=cobertura mocha"
+  },
+  "main": "/src/cluster.js"
+}

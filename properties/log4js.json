@@ -1,0 +1,64 @@
+{
+  "appenders": {
+    "out": {
+      "type": "console",
+      "layout": {
+        "type": "colored"
+      }
+    },
+    "node_server": {
+      "category":"node_server",
+      "type": "dateFile",
+      "filename": "./logs/node.log",
+      "pattern": "-yyyyMMdd",
+      "layout": {
+        "type": "basic"
+      }
+    },
+    "node_properties": {
+      "category":"node_properties",
+      "type": "dateFile",
+      "filename": "./logs/properties.log",
+      "pattern": "-yyyyMMdd",
+      "layout": {
+        "type": "basic"
+      }
+    },
+    "node_error": {
+      "category": "node_error",
+      "type": "dateFile",
+      "filename": "./logs/node_error.log",
+      "pattern": "-yyyyMMdd",
+      "layout": {
+        "type": "basic"
+      }
+    },
+    "cluster": {
+      "category":"cluster",
+      "type": "dateFile",
+      "filename": "./logs/cluster.log",
+      "pattern": "-yyyyMMdd",
+      "layout": {
+        "type": "basic"
+      }
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["out", "cluster"],
+      "level": "INFO"
+    },
+    "node_server":{
+      "appenders": ["out","node_server"],
+      "level": "DEBUG"
+    },
+    "node_properties":{
+      "appenders": ["node_properties"],
+      "level": "INFO"
+    },
+    "node_error": {
+      "appenders": ["node_error"],
+      "level": "DEBUG"
+    }
+  }
+}

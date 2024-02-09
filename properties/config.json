@@ -1,0 +1,45 @@
+{
+  "Release": "Cloud API",
+  "Version": "1.0.0",
+  "Vendor": "Private",
+  "Front": {
+    "debug": [
+      "time_tracking_",
+      "log_ip",
+      "buffer_out",
+      "queue_stats"
+    ],
+    "ACL": [
+      "0.0.0.0"
+    ],
+    "servers": {
+      "cluster": {
+        "instances": 2
+      },
+      "listen": [
+        {
+          "host": "0.0.0.0",
+          "port": 8443,
+          "proto": "https",
+          "name": "PublicAPI",
+          "ssh_path": "./_ssh/server/"
+        },
+        {
+          "host": "0.0.0.0",
+          "port": 8444,
+          "proto": "https",
+          "name": "PrivateAPI",
+          "ssh_path": "./_ssh/server/",
+          "requestCert": true,
+          "rejectUnauthorized": true
+        },
+        {
+          "host": "0.0.0.0",
+          "port": 8081,
+          "proto": "http",
+          "name": "Check"
+        }
+      ]
+    }
+  }
+}

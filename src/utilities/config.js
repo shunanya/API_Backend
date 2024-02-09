@@ -22,7 +22,7 @@ const opt = { /* default parameters */
         //
         // - SSLv2, SSLv3, TLSv1, TLSv1.1 and TLSv1.2
         //
-        // secureProtocol: 'SSLv23_method',//turn-back by Lusine request at 20.10.2014
+        secureProtocol: 'SSLv23_method',
 
         //
         // Supply `SSL_OP_NO_SSLv3` constant as secureOption to disable SSLv3

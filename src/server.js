@@ -139,7 +139,7 @@ const launch = (
        info["proto"] = utils.getProtocol(req);
        info["ip"] = utils.getClientIp(req);
        info["method"] = req.method.toUpperCase();
-       info["path"] = new URL(req.url, "http://" + req.headers.host + "/").pathname;
+       info["path"] = new URL(req.url, "https://" + req.headers.host + "/").pathname;
      }
      return JSON.stringify(info);
    }

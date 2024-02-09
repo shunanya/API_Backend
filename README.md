@@ -64,7 +64,7 @@ To do so call `revoke_client_cert.sh`
 ```
     revoke_client_cert.sh -c <client name>
 ```
-So now the same request from Postman will be refused.
+So now the same request from Postman (without any changes in request) will be refused.
 
 
 - **Note**: usage of PFX certificate in server sometimes does not allow to revoke the certificate in contrast of PEM certificate that is always working perfectly.

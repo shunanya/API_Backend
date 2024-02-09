@@ -2,6 +2,9 @@
 
 The current project is example which is simply explain how to create various servers by using Node.js.
 3 kind of servers is created simultaneous - http, ordinary https and https with client certificate.
+It's cropped from big project having a goal to share my knowledge in area of various kind of server creation.
+
+### Basic steps
 
 As usually you need to start with initialization of project
 ```

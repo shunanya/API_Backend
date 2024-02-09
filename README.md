@@ -5,7 +5,7 @@ The current project is example which is simply explain how to create various ser
 
 As usually you need to start with initialization of project
 
-    npm init
+    npm install
 
 This command will download the required libraries and put them into `node_modules` folder.
 

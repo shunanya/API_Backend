@@ -1,10 +1,10 @@
 {
-  "name": "API_Backend",
+  "name": "api_backend",
   "version": "1.0.9",
   "description": "API Backend Server for Node.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:shunanya/API_Backend.git"
+    "url": "git+ssh://git@github.com/shunanya/API_Backend.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -18,10 +18,7 @@
     "backend",
     "Security"
   ],
-  "author": {
-    "name": "Simon Hunanyan",
-    "email": "simon.hunanyan@monitis.com"
-  },
+  "author": "Simon Hunanyan <simon.hunanyan@monitis.com>",
   "engines": {
     "node": ">=14"
   },
@@ -33,5 +30,10 @@
     "test": "mocha",
     "testCoverage": "nyc --reporter=cobertura mocha"
   },
-  "main": "/src/cluster.js"
+  "main": "/src/cluster.js",
+  "bugs": {
+    "url": "https://github.com/shunanya/API_Backend/issues"
+  },
+  "homepage": "https://github.com/shunanya/API_Backend#readme",
+  "devDependencies": {}
 }

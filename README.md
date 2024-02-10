@@ -57,9 +57,9 @@ As soon as server or cluster is started you can test it.
 ```
 3. Add to Postman a new request `https://127.0.0.1:8444` 
 and add certificate (PFX or PEM) from `./_ssh/<client name>` folder into `Settings->Certificates` .
-Now send the request and you should see response body like ordinary HTTPS server.
+Now send the request and you should see response body like ordinary HTTPS server including in addition the client name which sent the request.
 
-4. You can REJECT the existing client request by REVOKING its certificate. 
+4. You can REJECT the existing client requests by REVOKING client certificate. 
 To do so call `revoke_client_cert.sh` 
 ```
     revoke_client_cert.sh -c <client name>

@@ -20,7 +20,7 @@ and run `./make_server_cert.sh` script.
 - **Note**: the server self-signed certificate will be created according `./cnf/server.cnf` config file.
 
 As soon as script finish with success, CA and Server certificates will be created.
-Note: PFX formatted certificate will be created in parallel to PEM certificates if you allowed to build it during script running.
+- **Note**: PFX formatted certificate will be created in parallel to PEM certificates if you allowed to build it during script running.
 
 The client certificate can be created as well. To do so please run `make_client_cert.sh` script.
 ```

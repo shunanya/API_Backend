@@ -17,7 +17,7 @@ Next you can generate https certificate. To do so goto `_ssh` folder
     cd _ssh
 ```
 and run `./make_server_cert.sh` script.
-- **Note**: the server certificate will be created according `./cnf/server.cnf` config file.
+- **Note**: the server self-signed certificate will be created according `./cnf/server.cnf` config file.
 
 As soon as script finish with success, CA and Server certificates will be created.
 Note: PFX formatted certificate will be created in parallel to PEM certificates if you allowed to build it during script running.

@@ -20,7 +20,7 @@
   ],
   "author": "Simon Hunanyan <simon.hunanyan@monitis.com>",
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "directories": {
     "External modules": "./node_modules",

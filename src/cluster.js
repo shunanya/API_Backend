@@ -24,7 +24,7 @@ if (workers > numCPUs) {
 if (workers > 0) { // cluster mode
   logger.info(`***** Run Node.js server in cluster mode with ${workers} workers *****`);
 
-  if (cluster.isMaster) {
+  if (cluster.isPrimary) {
     const map = {};
 
     const forkWorker = function (data) {

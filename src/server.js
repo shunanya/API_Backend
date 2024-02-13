@@ -79,7 +79,6 @@ const launch = (
     function createServers() {
      logger.info("Creating servers...");
      try {
-       // Create servers
        if (options.servers && options.servers.listen) {
          if (_.isArray(options.servers.listen)) {
            // Array of servers is defined

@@ -114,6 +114,7 @@ const launch = (
      if (!servers || servers.length === 0) {
        throw new Error("Servers has not been created...");
      }
+     return worker;
    }
 
    /**
@@ -166,7 +167,7 @@ const launch = (
      }
    }
 
-   createServers();
+   return createServers();
  });
 
 if (require.main === module) {

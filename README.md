@@ -37,7 +37,7 @@ Now you can start Node.js with `server.js` or `cluster.js`.
 
     node --openssl-legacy-provider cluster.js
 ```
-- **Note**: the NODE_OPTIONS environment variable `--openssl-legacy-provider` is needed only if you generated and use PFX certificate.
+- **Note**: the NODE_OPTIONS environment variable `--openssl-legacy-provider` is needed only if you generated and use PFX certificate and Node.js version you use is more than 17.x.
 
 The `server.js` will start only one instance of server script.
 
